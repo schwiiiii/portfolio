@@ -9,3 +9,4 @@
 - Built vue apps for each area of the site (Header, Main, Footer)
 - Built FontAwesomeIcon Vue component, used to consume @fortawesome/free-brands-svg-icons icon objects and construct svgs from them.
 - Added `README.md` and `CHANGELOG.md`
+- Changed the main access file to see if it will remove the jekyll theming ( I want the whole document dangit >:( )
