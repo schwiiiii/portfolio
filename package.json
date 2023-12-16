@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "A JavaScript project",
-  "main": "./dist/index.js",
+  "main": "./dist/index.html",
   "scripts": {
     "dev:watch-backend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/index.js --target node --out-dir ./dist/",
     "dev:watch-frontend": "node ./node_modules/parcel-bundler/bin/cli watch ./src/public/index.html --out-dir ./dist/public/",
@@ -19,6 +19,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "axios": "^1.6.2",
     "express": "^4.18.2",
     "vue": "^3.3.12"
