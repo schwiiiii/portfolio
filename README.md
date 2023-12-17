@@ -11,7 +11,7 @@ I plan to store personal projects and presentable code experiments here. I hope 
 
 Make sure you have npm installed.
 
-```npm run start```
+```npm run dev```
 
 ## Usage
 
