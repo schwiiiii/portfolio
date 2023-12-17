@@ -14,3 +14,5 @@
 - Added .nojekyll [found here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#static-site-generators:~:text=empty%20file%20called-,.nojekyll,-in%20the%20root)
 - Added index.html to the root
 - Updated project to vite
+- Updated title and favicon
+- Testing custom git publishing alias
