@@ -5,15 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brett Schwickerath | Portfolio</title>
-
-    <script>
-      let localTheme = localStorage.getItem('theme')
-      let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-      window.lightTheme = Boolean((localTheme === null && systemTheme) || (parseInt(localTheme)))
-
-      document.body.style.setProperty('--theme', window.lightTheme ? 0 : 1)
-    </script>
   </head>
   <body
     id="#app-body"
@@ -37,6 +28,13 @@
     <header id="header"></header>
     <main id="main"></main>
     <footer id="footer"></footer>
+    
+    <script>
+      let localTheme = localStorage.getItem('theme')
+      let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+      window.lightTheme = Boolean((localTheme === null && systemTheme) || (parseInt(localTheme)))
+      document.body.style.setProperty('--theme', window.lightTheme ? 1 : 0)
+    </script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
