@@ -5,11 +5,8 @@
 
   const animationActive = ref(false);
 
-  let localTheme = localStorage.getItem('theme')
-  let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-  const lightTheme = ref(Boolean((localTheme === null && systemTheme) || (parseInt(localTheme))))
-
+  const lightTheme = ref(window.lightTheme)
+  
   onMounted(() => {
     updateBodyCustomProperty()
   })
