@@ -1,15 +1,11 @@
 <script setup>
-  import { ref, onMounted } from 'vue';
+  import { ref } from 'vue';
   import { faCloudMoon, faSun } from '@fortawesome/free-solid-svg-icons'
   import FontAwesomeIcon from './FontAwesomeIcon.vue';
 
   const animationActive = ref(false);
 
   const lightTheme = ref(window.lightTheme)
-  
-  onMounted(() => {
-    updateBodyCustomProperty()
-  })
   
   function updateLocal(event) {
     localStorage.setItem('theme', event.target._modelValue ? 1 : 0)
