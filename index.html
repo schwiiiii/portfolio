@@ -9,8 +9,8 @@
   <body
     id="#app-body"
     style="
-      --ifLightThenLightElseDark: calc((10% * (1 - var(--theme, 1))) + (90% * var(--theme, 1)));
-      --ifLightThenDarkElseLight: calc((10% * var(--theme, 1)) + (90% * (1 - var(--theme, 1))));
+      --ifLightThenLightElseDark: calc((10% * (1 - var(--theme, 0))) + (90% * var(--theme, 0)));
+      --ifLightThenDarkElseLight: calc((10% * var(--theme, 0)) + (90% * (1 - var(--theme, 0))));
       --accent: hsl(240deg, 10%, var(--ifLightThenDarkElseLight));
       --bg: hsl(240deg, 10%, var(--ifLightThenLightElseDark));
       max-width: 60ch;
