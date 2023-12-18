@@ -4,6 +4,6 @@ import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 import './style.css'
 
-// createApp(Header).mount('#header')
+createApp(Header).mount('#header')
 createApp(Main).mount('#main')
 createApp(Footer).mount('#footer')

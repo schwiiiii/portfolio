@@ -21,3 +21,26 @@
     </li>
   </menu>
 </template>
+
+<style>
+  #footer .footer-nav {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #footer a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+  }
+
+  #footer a:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -16,3 +16,4 @@
 - Updated project to vite
 - Updated title and favicon
 - Testing custom git publishing alias
+- Tidy up the DarkMode toggle and add some visual flair
