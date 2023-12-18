@@ -36,7 +36,7 @@
       v-model="lightTheme"
       type="checkbox"
       @change="updateLocal($event)"
-      class="swcag-hidden"
+      class="wcag-hidden"
     />
   </label>
 </template>
