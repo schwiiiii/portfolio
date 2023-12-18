@@ -10,6 +10,8 @@
 
   const lightTheme = ref((localTheme === null && systemTheme) || (parseInt(localTheme)))
 
+  console.log(lightTheme)
+
   onMounted(() => {
     updateBodyCustomProperty()
   })
