@@ -5,12 +5,22 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brett Schwickerath | Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-DeRn5xI6.js"></script>
+
+    <script>
+      let localTheme = localStorage.getItem('theme')
+      let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+      window.lightTheme = Boolean((localTheme === null && systemTheme) || (parseInt(localTheme)))
+
+      document.body.style.setProperty('--theme', window.lightTheme ? 0 : 1)
+    </script>
+    <script type="module" crossorigin src="/portfolio/assets/index-DCp8XwhB.js"></script>
     <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Yn0cZIMe.css">
   </head>
   <body
     id="#app-body"
     style="
+      --theme: 0;
       --ifLightThenLightElseDark: calc((10% * (1 - var(--theme, 0))) + (90% * var(--theme, 0)));
       --ifLightThenDarkElseLight: calc((10% * var(--theme, 0)) + (90% * (1 - var(--theme, 0))));
       --accent: hsl(240deg, 10%, var(--ifLightThenDarkElseLight));
@@ -24,8 +34,6 @@
       display: flex;
       flex-direction: column;
       min-height: 100svh;
-      transition: 200ms ease-out;
-      overflow: hidden;
     "
   >
     <header id="header"></header>
