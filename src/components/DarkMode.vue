@@ -8,9 +8,7 @@
   let localTheme = localStorage.getItem('theme')
   let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-  const lightTheme = ref((localTheme === null && systemTheme) || (parseInt(localTheme)))
-
-  console.log(lightTheme)
+  const lightTheme = ref(Boolean((localTheme === null && systemTheme) || (parseInt(localTheme))))
 
   onMounted(() => {
     updateBodyCustomProperty()
