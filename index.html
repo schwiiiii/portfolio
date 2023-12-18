@@ -30,12 +30,16 @@
     <header id="header"></header>
     <main id="main"></main>
     <footer id="footer"></footer>
-    
+
     <script>
       let localTheme = localStorage.getItem('theme')
       let systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
       window.lightTheme = Boolean((localTheme === null && systemTheme) || (parseInt(localTheme)))
       document.body.style.setProperty('--theme', window.lightTheme ? 1 : 0)
+
+      setTimeout(() => {
+        document.body.style.setProperty('transition', '200ms ease-out')
+      }, 200)
     </script>
   </body>
 </html>
