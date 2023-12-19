@@ -17,3 +17,6 @@
 - Updated title and favicon
 - Testing custom git publishing alias
 - Tidy up the DarkMode toggle and add some visual flair
+- Added router for a fully fledged SPA
+- Realized that header, main, and footer tags aren't as strict as I thought and they don't need to be direct children of the body; Reworked app structure
+- Added Hypno Eye pen as a router test page

@@ -1,22 +1,29 @@
 <script setup>
   import DarkMode from './DarkMode.vue';
+  import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <a class="logo" href="/portfolio">
-    BS
-  </a>
-  <DarkMode />
+  <header>
+    <RouterLink class="logo" to="portfolio">BS</RouterLink>
+    <DarkMode />
+  </header>
 </template>
 
 <style>
-  #header .logo {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header .logo {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
   }
 
-  #header nav ul {
+  header nav ul {
     display: flex;
     list-style: none;
     gap: 10px;

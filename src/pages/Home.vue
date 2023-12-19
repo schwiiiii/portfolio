@@ -5,6 +5,7 @@
     <h4>Coming Soon</h4>
     <ol>
       <li><span style="text-decoration: line-through">Dark Mode Toggle</span></li>
+      <li><router-link to="hypno-eye">Hypno Eye 👁</router-link></li>
       <li>SSFP (Searchable, Sortable, Filterable, Paginated) Datatable</li>
       <li>D3 Interactive Charts &amp; Maps</li>
       <li>Various CSS Artboards...</li>

@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brett Schwickerath | Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index--5CHd9Ij.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Yn0cZIMe.css">
+    <script type="module" crossorigin src="/portfolio/assets/index-NbQblyw7.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-8murS8vq.css">
   </head>
   <body
     id="#app-body"
@@ -22,14 +22,18 @@
       margin-inline: auto;
       color: var(--accent);
       background-color: var(--bg);
-      display: flex;
-      flex-direction: column;
       min-height: 100svh;
+      display: flex;
     "
   >
-    <header id="header"></header>
-    <main id="main"></main>
-    <footer id="footer"></footer>
+    <div
+      id="app"
+      style="
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+      "
+    ></div>
 
     <script>
       let localTheme = localStorage.getItem('theme')
