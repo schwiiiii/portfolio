@@ -74,6 +74,7 @@
     filter: drop-shadow(0 0 0 var(--bg));
     transition: 200ms ease-out;
     cursor: pointer;
+    vertical-align: bottom;
   }
   
   .icon:hover {

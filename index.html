@@ -14,7 +14,6 @@
       --ifLightThenDarkElseLight: calc((10% * var(--theme, 0)) + (90% * (1 - var(--theme, 0))));
       --accent: hsl(240deg, 10%, var(--ifLightThenDarkElseLight));
       --bg: hsl(240deg, 10%, var(--ifLightThenLightElseDark));
-      max-width: 60ch;
       padding: 10px;
       margin-block: 0;
       margin-inline: auto;
@@ -30,6 +29,7 @@
         flex-grow: 1;
         display: flex;
         flex-direction: column;
+        gap: 10px;
       "
     ></div>
 

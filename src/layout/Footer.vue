@@ -1,10 +1,13 @@
 <script setup>
+  import { inject } from 'vue'
   import { faCodepen, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-  import FontAwesomeIcon from './FontAwesomeIcon.vue';
+  import FontAwesomeIcon from '../components/FontAwesomeIcon.vue';
+
+  const appSettings = inject('appSettings')
 </script>
 
 <template>
-  <footer>
+  <footer :style="{maxWidth: appSettings.layoutWidth.value}">
     <menu class="footer-nav">
       <li>
         <a
@@ -29,6 +32,9 @@
     display: flex;
     justify-content: center;
     border-top: 1px solid var(--accent);
+    margin-inline: auto;
+    width: 100%;
+    transition: 200ms ease-out;
   }
 
   footer .footer-nav {

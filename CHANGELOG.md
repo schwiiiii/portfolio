@@ -20,3 +20,23 @@
 - Added router for a fully fledged SPA
 - Realized that header, main, and footer tags aren't as strict as I thought and they don't need to be direct children of the body; Reworked app structure
 - Added Hypno Eye pen as a router test page
+
+## 1.0 Color Comparison Tool
+
+### Added
+
+- Added BsButton component for consistent button styles throughout the site
+  - Currently just used for housing styles, needs cleanup
+- Added ColorInput component for choosing colors
+  - Currently only accepts 6 character hex values and outputs the same
+  - Utilizes native browser color picker
+- Added BsMenu component for eventually being used as a menu toggle
+  - Currently does nothing
+- Added ColorComparison page and routes to site
+
+### Updated
+
+- Updated the FontAwesomeIcon component to be vertical-align: bottom by default, removing unneeded empty space below svgs
+- Updated the Header and Footer and App components to include an appSettings object
+  - Used to adjust page size for now
+  - More properties will be added in the future

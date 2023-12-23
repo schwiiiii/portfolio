@@ -1,12 +1,22 @@
 <script setup>
-  import Header from './components/Header.vue'
+  import { ref, provide } from 'vue'
+  import Header from './layout/Header.vue'
   import { RouterView } from 'vue-router'
-  import Footer from './components/Footer.vue'
+  import Footer from './layout/Footer.vue'
+
+  const appSettings = ref({
+    layoutWidth: {
+      default: '60ch',
+      value: '60ch'
+    }
+  })
+
+  provide('appSettings', appSettings)
 </script>
 
 <template>
   <Header />
-  <main>
+  <main :style="{maxWidth: appSettings.layoutWidth.value}">
     <RouterView />
   </main>
   <Footer />
@@ -19,5 +29,8 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    margin-inline: auto;
+    width: 100%;
+    transition: 200ms ease-out;
   }
 </style>
