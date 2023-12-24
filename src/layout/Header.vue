@@ -8,7 +8,7 @@
 </script>
 
 <template>
-  <header :style="{maxWidth: appSettings.layoutWidth.value}">
+  <header :style="{maxWidth: appSettings.layoutWidth.value, transition: appSettings.transition.value}">
     <RouterLink class="logo" to="portfolio">BS</RouterLink>
     <div style="display: flex; gap: 10px; align-items: center">
       <DarkMode />
@@ -24,7 +24,6 @@
     justify-content: space-between;
     margin-inline: auto;
     width: 100%;
-    transition: 200ms ease-out;
   }
 
   header .logo {

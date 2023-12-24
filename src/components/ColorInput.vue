@@ -1,6 +1,4 @@
 <script setup>
-  import BsButton from './BsButton.vue'
-
   defineProps({
     modelValue: String
   })
@@ -17,6 +15,8 @@
     style="
       width: 100%;
       border-radius: 5px;
+      border: 0;
+      background-color: var(--accent);
       border: 0;
     "
   />

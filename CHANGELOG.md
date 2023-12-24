@@ -33,10 +33,13 @@
 - Added BsMenu component for eventually being used as a menu toggle
   - Currently does nothing
 - Added ColorComparison page and routes to site
+- Added ColorComparisonGridCell for use in the ColorComparison component
+  - Uses svg text for responsive text size
 
 ### Updated
 
 - Updated the FontAwesomeIcon component to be vertical-align: bottom by default, removing unneeded empty space below svgs
 - Updated the Header and Footer and App components to include an appSettings object
   - Used to adjust page size for now
-  - More properties will be added in the future
+  - Used to adjust global transitions
+- Updated the ColorComparison grid to now contain dynamically generated, static css selectors to add hover effects when hovering over columns and rows

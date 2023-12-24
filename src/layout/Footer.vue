@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <footer :style="{maxWidth: appSettings.layoutWidth.value}">
+  <footer :style="{maxWidth: appSettings.layoutWidth.value, transition: appSettings.transition.value}">
     <menu class="footer-nav">
       <li>
         <a
@@ -34,7 +34,6 @@
     border-top: 1px solid var(--accent);
     margin-inline: auto;
     width: 100%;
-    transition: 200ms ease-out;
   }
 
   footer .footer-nav {

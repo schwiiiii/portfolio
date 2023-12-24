@@ -8,6 +8,10 @@
     layoutWidth: {
       default: '60ch',
       value: '60ch'
+    },
+    transition: {
+      default: '600ms cubic-bezier(0.16, 1, 0.3, 1)',
+      value: '600ms cubic-bezier(0.16, 1, 0.3, 1)'
     }
   })
 
@@ -16,7 +20,7 @@
 
 <template>
   <Header />
-  <main :style="{maxWidth: appSettings.layoutWidth.value}">
+  <main :style="{maxWidth: appSettings.layoutWidth.value, transition: appSettings.transition.value}">
     <RouterView />
   </main>
   <Footer />
@@ -31,6 +35,5 @@
     position: relative;
     margin-inline: auto;
     width: 100%;
-    transition: 200ms ease-out;
   }
 </style>
